@@ -1,38 +1,25 @@
-import React from 'react';
+import './Portfolio.css';
 
-const Portfolio = () => {
-    return (
-        <section className='portfolio'>
-                <h4 className="portfolio__title title">Портфолио</h4>
-                <ul className="portfolio__navigation">
-                    <li className="portfolio__cell">
-                        <a className="portfolio__link link" href="https://github.com/Yulia-Bon/how-to-learn" target="_blank"
-                           rel="noreferrer">Статичный сайт
-                            <div className = "portfolio__link-icon">↗</div>
-                        </a>
-
-                    </li>
-                    <li className="portfolio__cell">
-                        <a className="portfolio__link link" href="https://yulia-bon.github.io/russian-travel/index.html"
-                           target="_blank"
-                           rel="noreferrer"
-                        >Адаптивный сайт
-                            <div className = "portfolio__link-icon">↗</div>
-                        </a>
-
-                    </li>
-                    <li className="portfolio__cell">
-                        <a className="portfolio__link" href=""
-                           target="_blank"
-                           rel="noreferrer">
-                            Одностраничное приложение
-                            <div className = "portfolio__link-icon">↗</div>
-                        </a>
-
-                    </li>
-                </ul>
-        </section>
-    )
-};
+function Portfolio() {
+  return (
+    <section className="portfolio">
+      <h2 className="portfolio__title">Портфолио</h2>
+      <ul className="portfolio__container">
+        <li className="portfolio__box">
+          <p className="portfolio__website">Статичный сайт</p>
+          <a className="portfolio__link hover-link" href="https://github.com/Yulia-Bon/how-to-learn" target="blank"></a>
+        </li>
+        <li className="portfolio__box">
+          <p className="portfolio__website">Адаптивный сайт</p>
+          <a className="portfolio__link hover-link" href="https://yulia-bon.github.io/russian-travel/index.html" target="blank"></a>
+        </li>
+        <li className="portfolio__box">
+          <p className="portfolio__website">Одностраничное приложение</p>
+          <a className="portfolio__link hover-link" href="https://github.com/Yulia-Bon" target="blank"></a>
+        </li>
+      </ul>
+    </section>
+  )
+}
 
 export default Portfolio;

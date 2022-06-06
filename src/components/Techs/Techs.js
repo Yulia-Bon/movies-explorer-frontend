@@ -1,30 +1,25 @@
-import React from "react";
+import './Techs.css';
 
-import RunningTitle from "../RunningTitle/RunningTitle";
+function Techs() {
+  return (
+    <section className="techs" id="techs">
+      <h2 className="section-title">Технологии</h2>
+      <div className="techs__container">
+        <h3 className="techs__title">7 технологий</h3>
+        <p className="techs__subtitle">На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
 
-function Promo() {
-    return (
-        <section className="techs" id="techs">
-            <RunningTitle title="Технологии" />
-
-            <h1 className="techs__title ">7 технологий</h1>
-            <p className="techs__subtitle">
-                На курсе веб-разработки мы освоили технологии, которые применили в
-                дипломном проекте.
-            </p>
-            <nav>
-                <ul className="techs__nav ">
-                    <li className="techs__nav-element">HTML</li>
-                    <li className="techs__nav-element">CSS</li>
-                    <li className="techs__nav-element">JS</li>
-                    <li className="techs__nav-element">React</li>
-                    <li className="techs__nav-element">Git</li>
-                    <li className="techs__nav-element">Express.js</li>
-                    <li className="techs__nav-element">mongoDB</li>
-                </ul>
-            </nav>
-        </section>
-    );
+        <ul className="techs-list">
+          <li className="techs-list__title">HTML</li>
+          <li className="techs-list__title">CSS</li>
+          <li className="techs-list__title">JS</li>
+          <li className="techs-list__title">React</li>
+          <li className="techs-list__title">Git</li>
+          <li className="techs-list__title">Express.js</li>
+          <li className="techs-list__title">mongoDB</li>
+        </ul>
+      </div>
+    </section>
+  )
 }
 
-export default Promo;
+export default Techs;

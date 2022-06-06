@@ -1,50 +1,34 @@
+import './Footer.css';
+import { Route } from 'react-router-dom';
+
 function Footer() {
-    return (
-        <footer className="footer">
-            <h4 className="footer__title">
-                Учебный проект Яндекс.Практикум х BeatFilm.
-            </h4>
+  const endpoints = [
+    "/",
+    "/movies",
+    "/saved-movies"
+  ];
 
-            <div className="footer__info">
-                <p className="footer__copyright">©2022. </p>
-
-                <nav>
-                    <ul className="footer__navigation-list">
-                        <li className="footer__navigation-cell">
-                            <a
-                                className="footer__navigation-link"
-                                href="https://praktikum.yandex.ru"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Яндекс Практикум
-                            </a>
-                        </li>
-                        <li className="footer__navigation-cell">
-                            <a
-                                className="footer__navigation-link"
-                                href=""
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                GitHub
-                            </a>
-                        </li>
-                        <li className="footer__navigation-cell">
-                            <a
-                                className="footer__navigation-link"
-                                href=""
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                FaceBook
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
-    );
+  return (
+    <Route exact path={endpoints}>
+      <footer className="footer">
+        <h4 className="footer__title">Учебный проект Яндекс.Практикум х BeatFilm.</h4>
+        <div className="footer__container">
+          <p className="footer__copyright">&copy; 2022</p>
+          <ul className="social-networks social-networks_type_footer">
+            <li>
+              <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://practicum.yandex.ru/web/" target="blank">Яндекс.Практикум</a>
+            </li>
+            <li>
+              <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://github.com/" target="blank">Github</a>
+            </li>
+            <li>
+              <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://www.facebook.com/yandex.practicum/" target="blank">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </Route>
+  )
 }
 
 export default Footer;
