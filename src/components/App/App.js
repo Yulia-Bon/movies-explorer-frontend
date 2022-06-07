@@ -1,34 +1,66 @@
-import {
-  Route,
-} from "react-router-dom";
 import './App.css';
-
-import "./App.css";
-import Main from "../Main/Maim.js";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
+import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
+import Login from '../Login/Login';
+import Register from '../Register/Register';
+import PageNotFound from '../PageNotFound/PageNotFound';
+import Footer from '../Footer/Footer';
+import Preloader from '../Preloader/Preloader'
 
 function App() {
+  const [isLoading, setIsLoading] = React.useState(false);
+
   return (
+    <div className="page">
+      {isLoading ? (
+        <Preloader />) : (
 
-        <div className="page__container">
-          <Route exact path="/">
-            <Main />
-          </Route>
+          <>
+          <Header />
+      <Switch>
 
-          <Route exact path="/signup">
+        <Route exact path="/">
+          <Main />
+        </Route>
 
-          </Route>
+        <Route path="/signup">
+          <Register />
+        </Route>
 
-          <Route exact path="/signin">
+        <Route path="/signin">
+          <Login />
+        </Route>
 
-          </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
 
-          <Route path="*">
-          </Route>
+        <Route path="/movies">
+          <Movies />
+        </Route>
 
-          <Route>
-          </Route>
-        </div>
+        <Route path="/saved-movies">
+          <SavedMovies />
+        </Route>
 
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+
+      </Switch>
+
+      <Footer />
+      </>
+        )
+    }
+
+
+    </div>
   );
 }
 

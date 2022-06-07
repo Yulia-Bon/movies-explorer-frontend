@@ -103,8 +103,10 @@
   }
 
   .about-me__container {
+    border-top: 1px solid #DADADA;
     flex-direction: column;
-    margin-top: 60px;
+    padding-top: 60px;
+    margin-top: 0px;
     align-items: center;
   }
 
@@ -140,7 +142,7 @@
 @media screen and (max-width: 367px) {
 
   .about-me__photo {
-    height: 340px;
+    height: 357px;
     width: 280px;
     margin: 0;
   }
