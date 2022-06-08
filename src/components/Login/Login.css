@@ -1,0 +1,17 @@
+.form__input_info_email {
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 760px) {
+    .form__input_info_email {
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .form__input_info_email {
+        padding-bottom: 5px;
+    }
+}
