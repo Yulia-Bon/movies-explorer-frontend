@@ -39,7 +39,7 @@
 }
 
 .form__input {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border: 0;
     font-weight: 400;
     font-size: 14px;
@@ -67,7 +67,7 @@
     line-height: 12px;
     color: #EE3465;
     min-height: 12px;
-    margin-top: 9px;
+    margin-top: 15px;
 }
 
 
@@ -123,10 +123,29 @@
   }
 }
 
+/*font-weight:500 in log and reg*/
+.form__input_info_email {
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 760px) {
+    .form__input_info_email {
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .form__input_info_email {
+        padding-bottom: 5px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .entrance {
         align-items: center;
-        padding-top: 60px;
+        padding-top: 58px;
         display: flex;
         flex-direction: column;
     }

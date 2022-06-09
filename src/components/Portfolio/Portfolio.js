@@ -15,7 +15,7 @@ function Portfolio() {
         </li>
         <li className="portfolio__box">
           <p className="portfolio__website">Одностраничное приложение</p>
-          <a className="portfolio__link hover-link" href="https://github.com/Yulia-Bon" target="blank"></a>
+          <a className="portfolio__link hover-link" href="https://github.com/Yulia-Bon/react-mesto-auth" target="blank"></a>
         </li>
       </ul>
     </section>
