@@ -19,7 +19,7 @@ function Footer() {
               <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://practicum.yandex.ru/web/" target="blank">Яндекс.Практикум</a>
             </li>
             <li>
-              <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://github.com/" target="blank">Github</a>
+              <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://github.com/yandex-praktikum" target="blank">Github</a>
             </li>
             <li>
               <a className="social-networks__link social-networks__link_type_footer hover-link" href="https://www.facebook.com/yandex.practicum/" target="blank">Facebook</a>

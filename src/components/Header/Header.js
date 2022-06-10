@@ -1,53 +1,30 @@
+import './Header.css';
 import React from 'react';
-import { Link, Route } from "react-router-dom";
-import headerLogo from "../../images/logo.svg";
-function Header({handleLogOut = null}) {
+import Logo from '../Logo/Logo';
+import Navigation from '../Navigation/Navigation';
+import { Link, useLocation, Route } from 'react-router-dom';
 
-    return (
-        <header className='header'>
-            <div
-                className="header__nav"
-            >
-                    <img
-                        src={headerLogo}
-                        alt="Логотип приложения movies"
-                        className="header__logo"
-                    />
+function Header() {
 
-                <Route path="/sign-in">
-                    <Link
-                        to="/sign-up"
-                        className="header__button"
-                        onClick={handleLogOut}
-                    >
-                        Регистрация
-                    </Link>
-                </Route>
+  const endpoints = [
+    "/",
+    "/profile",
+    "/movies",
+    "/saved-movies",
+  ];
 
-                <Route path="/sign-up">
-                    <Link
-                        to="/sign-in"
-                        className="header__button"
-                        onClick={handleLogOut}
-                    >
-                        Войти
-                    </Link>
-                </Route>
+  const location = useLocation();
 
-                <Route exact path="/">
-                    <div className='header__nav_desktop'>
-                        <Link
-                            to="/sign-in"
-                            className="header__button"
-                            onClick={handleLogOut}
-                        >
-                            Аккаунт
-                        </Link>
-                    </div>
-                </Route>
-            </div>
-        </header>
-    );
+  return (
+    <Route exact path={endpoints}>
+      <header className={`header ${(location.pathname === '/') ? '' : 'header_type_logged-in'}`}>
+        <Logo />
+        <Navigation />
+
+      </header>
+    </Route>
+
+  )
 }
 
 export default Header;

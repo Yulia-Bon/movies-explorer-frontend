@@ -53,8 +53,8 @@
 
 .movies-card__like-movie {
   background-image: url(../../images/saved-diz.svg);
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border: 0;
   background-repeat: no-repeat;
   background-color: #313131;
@@ -64,6 +64,8 @@
 }
 
 .movies-card__like-movie_active {
+  height: 40px;
+  width: 40px;
   background-image: url(../../images/icon-like-active.svg);
 }
 
@@ -71,6 +73,7 @@
   .card {
     max-width: 342px;
     min-height: 309px;
+    margin: 2px 0 -17px 0;
   }
 
   .card__image {
@@ -81,14 +84,15 @@
 
 @media (max-width: 900px) {
   .card__info {
-    max-width: 300px;
+    max-width: 315px;
   }
 }
 
 @media (max-width: 540px) {
   .card {
-    min-height: 271px;
-    padding: 9px;
+    min-height: 244px;
+    padding: 7px;
+    margin: 35px 0 -26px 0;
   }
 
   .card__image {
@@ -100,13 +104,8 @@
     max-width: 280px;
   }
 
-  .card__title {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
   .card__duration {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 18px;
   }
 }
