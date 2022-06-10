@@ -5,11 +5,11 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 function SavedMovies() {
 
     return (
-    <main className="movies-page">
-      <SearchForm />
-      <MoviesCardList className="button_place_card-delete"/>
-    </main>
-  )
+        <main className="movies-page">
+            <SearchForm/>
+            <MoviesCardList className="button_place_card-delete"/>
+        </main>
+    )
 }
 
 export default SavedMovies;

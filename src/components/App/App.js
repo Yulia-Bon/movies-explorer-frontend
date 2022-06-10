@@ -13,55 +13,55 @@ import Footer from '../Footer/Footer';
 import Preloader from '../Preloader/Preloader'
 
 function App() {
-  const [isLoading, setIsLoading] = React.useState(false);
+    const [isLoading, setIsLoading] = React.useState(false);
 
-  return (
-    <div className="page">
-      {isLoading ? (
-        <Preloader />) : (
+    return (
+        <div className="page">
+            {isLoading ? (
+                <Preloader/>) : (
 
-          <>
-          <Header />
-      <Switch>
+                <>
+                    <Header/>
+                    <Switch>
 
-        <Route exact path="/">
-          <Main />
-        </Route>
+                        <Route exact path="/">
+                            <Main/>
+                        </Route>
 
-        <Route path="/signup">
-          <Register />
-        </Route>
+                        <Route path="/signup">
+                            <Register/>
+                        </Route>
 
-        <Route path="/signin">
-          <Login />
-        </Route>
+                        <Route path="/signin">
+                            <Login/>
+                        </Route>
 
-        <Route path="/profile">
-          <Profile />
-        </Route>
+                        <Route path="/profile">
+                            <Profile/>
+                        </Route>
 
-        <Route path="/movies">
-          <Movies />
-        </Route>
+                        <Route path="/movies">
+                            <Movies/>
+                        </Route>
 
-        <Route path="/saved-movies">
-          <SavedMovies />
-        </Route>
+                        <Route path="/saved-movies">
+                            <SavedMovies/>
+                        </Route>
 
-        <Route path="*">
-          <PageNotFound />
-        </Route>
+                        <Route path="*">
+                            <PageNotFound/>
+                        </Route>
 
-      </Switch>
+                    </Switch>
 
-      <Footer />
-      </>
-        )
-    }
+                    <Footer/>
+                </>
+            )
+            }
 
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

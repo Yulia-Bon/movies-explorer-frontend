@@ -6,25 +6,25 @@ import { Link, useLocation, Route } from 'react-router-dom';
 
 function Header() {
 
-  const endpoints = [
-    "/",
-    "/profile",
-    "/movies",
-    "/saved-movies",
-  ];
+    const endpoints = [
+        "/",
+        "/profile",
+        "/movies",
+        "/saved-movies",
+    ];
 
-  const location = useLocation();
+    const location = useLocation();
 
-  return (
-    <Route exact path={endpoints}>
-      <header className={`header ${(location.pathname === '/') ? '' : 'header_type_logged-in'}`}>
-        <Logo />
-        <Navigation />
+    return (
+        <Route exact path={endpoints}>
+            <header className={`header ${(location.pathname === '/') ? '' : 'header_type_logged-in'}`}>
+                <Logo/>
+                <Navigation/>
 
-      </header>
-    </Route>
+            </header>
+        </Route>
 
-  )
+    )
 }
 
 export default Header;
