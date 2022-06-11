@@ -39,8 +39,8 @@
     margin: 3px;
     padding: 0;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 13px;
     color: #A0A0A0;
 }
 
@@ -70,6 +70,7 @@
 }
 
 @media (max-width: 1020px) {
+
     .card {
         max-width: 342px;
         min-height: 309px;
@@ -102,10 +103,5 @@
 
     .card__info {
         max-width: 280px;
-    }
-
-    .card__duration {
-        font-size: 11px;
-        line-height: 18px;
     }
 }

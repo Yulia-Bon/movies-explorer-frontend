@@ -52,6 +52,11 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .techs-list__title {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
     .techs {
         padding: 87px 50px 88px;
         width: calc(100% - 50px * 2);

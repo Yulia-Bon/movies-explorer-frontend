@@ -78,6 +78,10 @@
         width: calc(100% - 50px * 2);
     }
 
+    .about-project__part {
+        font-weight: 400;
+    }
+
     .about-project__container {
         gap: 15px 30px;
         padding-bottom: 94px;
@@ -137,5 +141,10 @@
         grid-template-columns: 100px 1fr;
         grid-template-rows: 35px;
         row-gap: 9px;
+    }
+
+    .about-project__part {
+        font-size: 11px;
+        line-height: 13px;
     }
 }

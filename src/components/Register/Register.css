@@ -35,7 +35,7 @@
     font-size: 10px;
     line-height: 12px;
     color: #8B8B8B;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .form__input {
@@ -43,7 +43,7 @@
     border: 0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 17px;
     color: #FFFFFF;
     background: #202020;
     box-sizing: border-box;
@@ -109,6 +109,7 @@
 }
 
 @media screen and (max-width: 967px) {
+
     .entrance {
         padding-top: 230px;
     }
@@ -154,7 +155,7 @@
     }
 
     .form__label {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
 
     .form__container {
@@ -163,7 +164,7 @@
     }
 
     .entrance__title {
-        margin-top: 38px;
+        margin-top: 45px;
     }
 
     .form__link-container {
