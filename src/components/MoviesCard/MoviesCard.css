@@ -1,12 +1,12 @@
 .card {
-    margin: 0;
-    padding: 18px 0;
+    margin: 10px 0 0 0;
+    padding: 6px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
-    justify-content: space-between;
-    list-style-type: none; /* перенести в класс списка */
+    justify-content: space-around;
+    list-style-type: none;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     border-radius: 6px;
@@ -17,12 +17,11 @@
 }
 
 .card__info {
-    margin: 8px;
-    padding: 0;
+    padding: 0 8px;
     display: flex;
     justify-content: space-between;
     max-width: 344px;
-    width: 100%;
+    width: 90%;
 }
 
 .card__title {
@@ -56,16 +55,16 @@
     height: 30px;
     width: 30px;
     border: 0;
+    background-color: #222222; /* без него никак */
     background-repeat: no-repeat;
-    background-color: #313131;
     border-radius: 50%;
     background-position: center;
     cursor: pointer;
 }
 
 .movies-card__like-movie_active {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-image: url(../../images/icon-like-active.svg);
 }
 
@@ -74,7 +73,7 @@
     .card {
         max-width: 342px;
         min-height: 309px;
-        margin: 2px 0 -17px 0;
+        margin: 10px 0 10px 0;
     }
 
     .card__image {
@@ -92,8 +91,8 @@
 @media (max-width: 540px) {
     .card {
         min-height: 244px;
-        padding: 7px;
-        margin: 35px 0 -26px 0;
+        padding: 0 7px;
+        margin: 10px 0 0 0;
     }
 
     .card__image {
