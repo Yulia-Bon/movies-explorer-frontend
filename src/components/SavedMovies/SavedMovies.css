@@ -1,0 +1,13 @@
+.button_place_card-delete {
+    background-image: url(../../images/delete.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 30px;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
