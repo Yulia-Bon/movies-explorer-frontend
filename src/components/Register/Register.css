@@ -78,6 +78,7 @@
     color: #FFFFFF;
     padding: 14px;
     width: 100%;
+    margin-top: 10px;
 }
 
 .button_disabled {
@@ -175,6 +176,7 @@
     .button_type_form {
         font-size: 12px;
         line-height: 15px;
+        margin-top: 10px;
     }
 
     .link_type_entrance {
