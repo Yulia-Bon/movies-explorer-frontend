@@ -36,7 +36,7 @@ function Error(props) {
                         break;
                     case 400:
                         setIsError(true);
-                        setErrorMessage('При регистрации произошла ошибка. Проверьте корректность введеного email');
+                        setErrorMessage('При регистрации произошла ошибка. Проверьте корректность введенного email');
                         break;
                     default:
                         setIsError(true);
@@ -61,7 +61,7 @@ function Error(props) {
                         break;
                     case 400:
                         setIsError(true);
-                        setErrorMessage('При регистрации произошла ошибка. Проверьте корректность введеного email');
+                        setErrorMessage('При регистрации произошла ошибка. Проверьте корректность введенного email');
                         break;
                     default:
                         setIsError(true);
