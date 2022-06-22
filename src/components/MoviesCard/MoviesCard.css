@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
@@ -14,6 +14,7 @@
     max-width: 364px;
     width: 100%;
     box-sizing: border-box;
+    height: 92%;
 }
 
 .card__info {
@@ -48,14 +49,16 @@
     padding: 0;
     max-width: 360px;
     width: 100%;
+    min-height: 200px;
 }
 
 .movies-card__like-movie {
+    margin-left: 5px;
     background-image: url(../../images/saved-diz.svg);
     height: 30px;
     width: 30px;
     border: 0;
-    background-color: #222222; /* без него никак */
+    background-color: #222222;
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
@@ -63,9 +66,25 @@
 }
 
 .movies-card__like-movie_active {
+    margin-left: 5px;
     height: 30px;
     width: 30px;
     background-image: url(../../images/icon-like-active.svg);
+}
+
+.button_place_card-delete {
+    margin-left: 5px;
+    background-image: url(../../images/delete.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 30px;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 @media (max-width: 1020px) {

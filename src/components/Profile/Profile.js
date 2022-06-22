@@ -7,9 +7,8 @@ import CurrentUserContext from '../../context/CurrentUserContext';
 
 function Profile(props) {
 
-    const { values, handleChange, setValues, setIsValid, isValid, errors, resetForm } = useFormValidation();
+    const {values, handleChange, setValues, setIsValid, isValid, errors, resetForm} = useFormValidation();
     const currentUser = React.useContext(CurrentUserContext);
-
 
     const [isInputActive, setIsInputActive] = React.useState(false);
 
@@ -23,13 +22,13 @@ function Profile(props) {
     }, [currentUser])
 
     React.useEffect(() => {
-        if(currentUser.name === values.name && currentUser.email === values.email) {
+        if (currentUser.name === values.name && currentUser.email === values.email) {
             setIsValid(false)
         }
     }, [isValid, currentUser, values, props.isSuccessfulRequest])
 
     React.useEffect(() => {
-        if(props.errorStatusCode) {
+        if (props.errorStatusCode) {
             setIsValid(false);
         }
     }, [isValid, props.errorStatusCode, props.isSuccessfulRequest])
@@ -46,9 +45,9 @@ function Profile(props) {
             values.email,
         )
 
-        if(!props.isSuccessfulRequest) {
+        if (!props.isSuccessfulRequest) {
             setIsInputActive(false);
-        } else  {
+        } else {
             setIsInputActive(true);
         }
     }
@@ -99,27 +98,28 @@ function Profile(props) {
                 <span id="email-input-error" className="profile__error">{errors.email || ''}</span>
 
 
-            {!isInputActive ? (
-                <>
-                    <span className="error">{props.isSuccessfulRequest ? 'Имя и email изменены!' : ''}</span>
-                <div className="profile__link-container">
-                    <button className="button link link_type_profile hover-link"
-                            onClick={handleEditProfile}>Редактировать
-                    </button>
-                    <Link to="/" className="link link_type_logout hover-link" onClick={props.logout}>Выйти из аккаунта</Link>
-                </div>
+                {!isInputActive ? (
+                    <>
+                        <span className="error">{props.isSuccessfulRequest ? 'Имя и email изменены!' : ''}</span>
+                        <div className="profile__link-container">
+                            <button className="button link link_type_profile hover-link"
+                                    onClick={handleEditProfile}>Редактировать
+                            </button>
+                            <Link to="/" className="link link_type_logout hover-link" onClick={props.logout}>Выйти из
+                                аккаунта</Link>
+                        </div>
                     </>
-            ) : (
-                <div className="profile__button-container">
-                    <Error errorStatusCode={props.errorStatusCode} isSuccessfulRequest={props.isSuccessfulRequest} />
-                    <button
-                        className={`button button_type_form hover-button ${!isValid ? 'button_disabled' : ''}`}
-                        type="submit"
-                        disabled={!isValid}>
-                        Сохранить
-                    </button>
-                </div>
-            )}
+                ) : (
+                    <div className="profile__button-container">
+                        <Error errorStatusCode={props.errorStatusCode} isSuccessfulRequest={props.isSuccessfulRequest}/>
+                        <button
+                            className={`button button_type_form hover-button ${!isValid ? 'button_disabled' : ''}`}
+                            type="submit"
+                            disabled={!isValid}>
+                            Сохранить
+                        </button>
+                    </div>
+                )}
             </form>
         </section>
     )

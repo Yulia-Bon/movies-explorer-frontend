@@ -4,7 +4,7 @@ import useFormValidation from '../../utils/validation';
 import { useLocation } from 'react-router-dom';
 
 function SearchForm(props) {
-    const { values, handleChange, isValid, setValues, setIsValid } = useFormValidation();
+    const {values, handleChange, isValid, setValues, setIsValid} = useFormValidation();
 
     const location = useLocation();
     const locationMovies = location.pathname === '/movies';
@@ -18,7 +18,7 @@ function SearchForm(props) {
         if (localStorage.getItem('query') && localStorage.getItem('stateCheckbox') && locationMovies) {
             const inputSearch = localStorage.getItem('query');
             const checkbox = JSON.parse(localStorage.getItem('stateCheckbox'));
-            setValues({ search: inputSearch });
+            setValues({search: inputSearch});
             setIsValid(true);
             setCheckbox(checkbox);
         }
@@ -74,19 +74,21 @@ function SearchForm(props) {
                     </div>
                     <button className="search__button hover-button"
                             type="submit"
-                            disabled={isEmptyRequest && !isValid}
-                    ></button>
+                            disabled={isEmptyRequest && !isValid}>
+                    </button>
                 </form>
                 <div className="search__box-checkbox">
                     <p className="search__checked-title">Короткометражки</p>
                     <label className="search__checkbox">
-                        <input  name="checkbox"
-                                value={values.checkbox}
-                                className="search__checkbox-input"
-                                type="checkbox"
-                                onChange={handleCheckbox}
-                                checked={checkbox}
-                                disabled={!isValid}></input>
+                        <input name="checkbox"
+                               value={values.checkbox}
+                               className="search__checkbox-input"
+                               type="checkbox"
+                               onChange={handleCheckbox}
+                               checked={checkbox}
+                               disabled={!isValid}>
+
+                        </input>
                         <span className="search__checkbox-slider"></span>
                     </label>
 

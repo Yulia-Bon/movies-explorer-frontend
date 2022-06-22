@@ -3,13 +3,26 @@
     width: 100%;
 }
 
+.movies__error {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 490px;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #EE3465;
+}
+
 .movies-list {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, 364px);
     gap: 30px 5px;
     grid-template-rows: auto;
-    min-height: 490px;
     padding: 0;
     justify-content: space-around;
 }
