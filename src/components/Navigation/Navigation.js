@@ -1,11 +1,14 @@
 import './Navigation.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
-function Navigation(props) {
-
+function Navigation() {
+    const location = useLocation()
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isBurgOpen, setIsBurgOpen] = React.useState(false);
+
+    //console.log(location)
 
     function handleMenuOpen() {
         setIsMenuOpen(true)
@@ -17,7 +20,7 @@ function Navigation(props) {
 
     return (
         <div className="navigation">
-            {props.loggedIn ?
+            {!(location.pathname === '/') ?
                 (<>
                         <button className="button button-burger" onClick={handleMenuOpen}></button>
                         <nav

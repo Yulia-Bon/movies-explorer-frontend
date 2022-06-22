@@ -2,10 +2,10 @@ import './Header.css';
 import React from 'react';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
-import { useLocation, Route } from 'react-router-dom';
+import { Link, useLocation, Route } from 'react-router-dom';
 
-function Header(props) {
-    const location = useLocation();
+function Header() {
+
     const endpoints = [
         "/",
         "/profile",
@@ -13,12 +13,13 @@ function Header(props) {
         "/saved-movies",
     ];
 
+    const location = useLocation();
 
     return (
         <Route exact path={endpoints}>
             <header className={`header ${(location.pathname === '/') ? '' : 'header_type_logged-in'}`}>
                 <Logo/>
-                <Navigation loggedIn={props.loggedIn}/>
+                <Navigation/>
 
             </header>
         </Route>
