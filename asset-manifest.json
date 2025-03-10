@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/movies-explorer-frontend/static/css/main.fa306928.css",
+    "main.js": "/movies-explorer-frontend/static/js/main.bb4d4ed4.js",
+    "static/js/453.7a025395.chunk.js": "/movies-explorer-frontend/static/js/453.7a025395.chunk.js",
+    "static/media/photo.jpg": "/movies-explorer-frontend/static/media/photo.a9113112dd8e07bec9bd.jpg",
+    "static/media/Inter-Medium.woff": "/movies-explorer-frontend/static/media/Inter-Medium.c7cb5b8223473b058dfc.woff",
+    "static/media/Inter-Regular.woff": "/movies-explorer-frontend/static/media/Inter-Regular.8cdd6a7474569ad50477.woff",
+    "static/media/Inter-Medium.woff2": "/movies-explorer-frontend/static/media/Inter-Medium.0e3cc9f2e33d6d2c5936.woff2",
+    "static/media/Inter-Regular.woff2": "/movies-explorer-frontend/static/media/Inter-Regular.133ad19960cd5dc1bd7e.woff2",
+    "index.html": "/movies-explorer-frontend/index.html",
+    "static/media/find.svg": "/movies-explorer-frontend/static/media/find.ac2080904e446d02140a.svg",
+    "static/media/icon-logo.svg": "/movies-explorer-frontend/static/media/icon-logo.4b8be9fa7ab39bd41621f90fb0be0fde.svg",
+    "static/media/icon-account.svg": "/movies-explorer-frontend/static/media/icon-account.a10dba0e621fec4c5ec0.svg",
+    "static/media/saved-diz.svg": "/movies-explorer-frontend/static/media/saved-diz.c3b6ab2c75837abea58b.svg",
+    "static/media/delete.svg": "/movies-explorer-frontend/static/media/delete.3fdb38f8c48c620dbfeb.svg",
+    "static/media/icon-like-active.svg": "/movies-explorer-frontend/static/media/icon-like-active.85fa4ae77be3b0a52ace.svg",
+    "static/media/icon-menu.svg": "/movies-explorer-frontend/static/media/icon-menu.8fbff9fbf489fb701798.svg",
+    "static/media/icon-close-menu.svg": "/movies-explorer-frontend/static/media/icon-close-menu.128b4b070d39259dc44e.svg",
+    "static/media/icon-arrow.svg": "/movies-explorer-frontend/static/media/icon-arrow.df4728086c2add652b48.svg",
+    "static/media/icon-arroww.svg": "/movies-explorer-frontend/static/media/icon-arroww.21d4a41cbd169bf0c5fe.svg",
+    "main.fa306928.css.map": "/movies-explorer-frontend/static/css/main.fa306928.css.map",
+    "main.bb4d4ed4.js.map": "/movies-explorer-frontend/static/js/main.bb4d4ed4.js.map",
+    "453.7a025395.chunk.js.map": "/movies-explorer-frontend/static/js/453.7a025395.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa306928.css",
+    "static/js/main.bb4d4ed4.js"
+  ]
+}
